@@ -5,27 +5,37 @@ body {
     text-align: center;
     padding: 20px;
 }
-.menu-container {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: auto;
+img {
+    border-radius: 50%;
 }
-.section {
-    background-color: #ff8c00;
-    padding: 10px;
-    margin-top: 15px;
+.navbar {
+    display: flex;
+    background-color: #333;
+    padding: 10px 20px;
+    align-items: center;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.navbar a:hover {
+    background-color: #555;
     border-radius: 5px;
 }
-.cake-list {
-    list-style: none;
-    padding: 0;
+.navbar .logo {
+    font-weight: bold;
+    flex-grow: 1;
 }
-.cake-list li {
+.navbar .menu {
     display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
+    gap: 15px;
+}
+@media (max-width: 600px) {
+    .navbar .menu {
+        flex-direction: column;
+        gap: 5px;
+    }
 }
 .footer {
     margin-top: 20px;
