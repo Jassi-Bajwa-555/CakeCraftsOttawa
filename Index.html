@@ -3,89 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crazy Bakers Cake Menu</title>    
-    <link rel="stylesheet" href="Index.css">
+    <title>Cake List</title>   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" >
+        <div class="container-fluid" >                
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="CakeCraftsOttawa_QR.png" height="40" alt="Cake Craft Ottawa" class="rounded-circle" />
+                Cake Craft Ottawa
+            </a>
+        </div>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark"  asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark">Regular Cakes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark">Premium Cakes</a>
+                    </li>
+                </ul>
+            </div>            
+    </nav>
 </head>
-
 <body>
-    <div class="navbar">
-        <div class="logo">My Website</div>
-        <div class="menu">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+           <img class="border rounded-circle" src="Black_Forest.jpeg"  alt="Accommodations"  style="height:300px; width:350px;"/><br/>
+            <a class="btn btn-primary mt-2" style="width:350px;">Create Post</a>
+        </div>
+        <div class="col-sm-4">
+            <img class="border rounded-circle" src="Chocolate.jpeg"  alt="RideShares" style="height:300px; width:350px;" /><br />
+            <a class="btn btn-primary mt-2" style="width:350px;">Create Post</a>
+        </div>        
+        <div class="col-sm-4">
+            <img class="border rounded-circle" src="Fruit_Cake.jpeg"  alt="RideShares" style="height:300px; width:350px;" /><br />
+            <a class="btn btn-primary mt-2" style="width:350px;">Create Post</a>
         </div>
     </div>
-    <div class="menu-container">
-        <h1>CAKE CRAFT OTTAWA</h1>
 
-        <div class="row">
-            <div>
-                <table>
-                <th>Fruit_Cake Cake</th>
-                <th>Fruit_Cake Cake</th>
-                <th>Fruit_Cake Cake</th>
-                </table>
-            </div>
-            <div><img src="Fruit_Cake.jpeg" height="100" width="100"/></div>
+    <div class="row mt-5">
+        <div class="col-lg-4 justify-content-center align-content-center">
+           <img class="border rounded-circle" src="Gulab_Jamun.jpeg"  alt="Accommodations"  style="height:300px; width:350px;"/><br/>
+            <a class="btn btn-primary mt-2" style="width:350px;">Create Post</a>
         </div>
-
-        <div class="row">        
-            <div><img src="Red_Velvet.jpeg" height="100" width="100"/></div>
-            <div>
-                <table>
-                <th>Red_Velvet Cake</th>
-                <th>Red_Velvet Cake</th>
-                <th>Red_Velvet Cake</th>
-                </table>
-            </div>
+        <div class="col-lg-4">
+            <img class="border rounded-circle" src="Rasmalai.jpeg"  alt="RideShares" style="height:300px; width:350px;" /><br />
+            <a class="btn btn-primary mt-2" style="width:350px;">Create Post</a>
         </div>
-
-        <div class="row">
-            <div>
-                <table>
-                <th>Chocolate Cake</th>
-                <th>Chocolate Cake</th>
-                <th>Chocolate Cake</th>
-                </table>
-            </div>           
-            <div><img src="Chocolate.jpeg" height="100" width="100"/></div>
+        <div class="col-lg-4">
+            <img class="border rounded-circle" src="Red_Velvet.jpeg"  alt="Jobs" style="height:300px; width:350px;" /><br />
+            <a class="btn btn-primary mt-2" style="width:350px;">Create Post</a>
         </div>
-
-        <div class="row">           
-            <div><img src="Black_Forest.jpeg" height="100" width="100"/></div>
-            <div>
-                <table>
-                <th>Black_Forest Cake</th>
-                <th>Black_Forest Cake</th>
-                <th>Black_Forest Cake</th>
-                </table>
-            </div>
-        </div>
-
-        <div class="row">
-            <div>
-                <table>
-                <th>Gulab_Jamun Cake</th>
-                <th>Gulab_Jamun Cake</th>
-                <th>Gulab_Jamun Cake</th>
-                </table>
-            </div>           
-            <div><img src="Gulab_Jamun.jpeg" height="100" width="100"/></div>
-        </div>
-
-        <div class="row">           
-            <div><img src="Rasmalai.jpeg" height="100" width="100"/></div>
-            <div>
-                <table>
-                <th>Gulab_Jamun Cake</th>
-                <th>Gulab_Jamun Cake</th>
-                <th>Gulab_Jamun Cake</th>
-                </table>
-            </div>
-        </div>      
     </div>
-</body>
-<footer></footer>
+    </div>
+    <footer class="border-top footer text-muted mt-5">
+        <div class="container">
+            &copy; 2023 - Cake Craft Ottawa - Privacy
+        </div>
+    </footer>
+    </body>
 </html>
